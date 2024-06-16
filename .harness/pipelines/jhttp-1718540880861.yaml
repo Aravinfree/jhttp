@@ -29,17 +29,6 @@ pipeline:
                       echo "Welcome to Harness CI"
                       mvn -B package --file pom.xml
                   timeout: ""
-              - step:
-                  identifier: dockerbuild
-                  name: docker_build
-                  spec:
-                    caching: true
-                    connectorRef: <+input>
-                    repo: hello/world
-                    tags:
-                      - latest
-                  timeout: ""
-                  type: BuildAndPushDockerRegistry
           platform:
             arch: Amd64
             os: Linux
@@ -47,3 +36,4 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+        description: ""
