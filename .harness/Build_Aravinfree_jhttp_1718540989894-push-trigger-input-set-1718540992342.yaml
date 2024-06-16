@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Aravinfree_jhttp_1718540989894-push-trigger-input-set
+  identifier: Build_Aravinfree_jhttp_1718540989894pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: AravPracticeProject_8060387
+  pipeline:
+    identifier: Build_Aravinfree_jhttp_1718540989894
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
